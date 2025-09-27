@@ -1,25 +1,9 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router';
 import My_Photo from '../assets/my_pic.png';
 import Skills from './Skills.jsx';
 import Projects from './Projects.jsx';
 import classes from './HomePage.module.css';
 
 export default function HomePage() {
-    const location = useLocation();
-    useEffect(() => {
-        if (location.hash === '') {
-            const element = document.getElementById('home');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        } else if (location.hash === '#projects') {
-            const element = document.getElementById('projects');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }, [location]);
     return (
         <>
             <section id="home" className={classes.main}>

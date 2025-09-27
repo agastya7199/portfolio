@@ -12,7 +12,7 @@ function App() {
             path: '',
             Component: Root,
             children: [
-                { path: '', Component: HomePage },
+                { index: true, Component: HomePage },
                 { path: 'projects', Component: Projects },
                 { path: 'about', Component: About },
                 { path: 'contact', Component: Contact },
