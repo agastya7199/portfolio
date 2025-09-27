@@ -1,0 +1,106 @@
+.nameNavigation {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    background: #0d0d0d;
+    padding: 1rem 0;
+    top: 0;
+    z-index: 2;
+}
+
+.mainNavigationContents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+}
+
+.navigationContainer {
+    background-color: #222222;
+    padding: 0.5rem 0.2rem;
+    border-radius: 25px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.logo,
+.socialContainer {
+    padding-top: 0.5rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-family: monospace, sans-serif;
+    font-size: 16px;
+}
+
+.active {
+    color: white;
+    background: #0d0d0d;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    transition: 0.6s ease;
+}
+
+.inactive {
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+.inactive:hover {
+    color: gray;
+}
+
+.socialList {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.available {
+    color: #28915f;
+    font-size: 12px;
+}
+
+.greenDot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 0.6rem;
+    margin-bottom: 0.04rem;
+    border-radius: 20px;
+    background-color: #38e492;
+}
+
+.linkedInIcon,
+.gitHubIcon {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    margin-top: -0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.resumeIcon {
+    color: white;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0.2rem 0 0 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.linkedInIcon:hover,
+.gitHubIcon:hover,
+.resumeIcon:hover {
+    transform: scale(1.4);
+}

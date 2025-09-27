@@ -1,0 +1,68 @@
+@keyframes rollingAnimation {
+    0% {
+        transform: translateX(-49.7%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.skillsWrapper {
+    margin: 7rem auto;
+}
+
+.skillContainerForeground,
+.skillContainerBackground {
+    background-color: #ef4444;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    transform: rotate(-2deg);
+    width: 99.9%;
+}
+
+.skillContainerBackground {
+    background-color: #222222;
+    transform: rotate(2deg);
+}
+
+.mySkillsheader {
+    max-width: 85%;
+    margin: 2rem auto;
+}
+
+.skillListForeground,
+.skillListBackground {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    animation: rollingAnimation 30s linear infinite;
+}
+
+.skillListBackground {
+    animation: rollingAnimation 30s linear infinite reverse;
+}
+
+.skillListForeground:hover,
+.skillListBackground:hover {
+    animation-play-state: paused;
+}
+
+.skillItem {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0 1.6rem 0 1rem;
+}
+
+.bulbIcon {
+    top: 0.15rem;
+    right: 1.23rem;
+    position: relative;
+}
+.extraBulbIcon {
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    top: 0.29rem;
+    right: 0.4rem;
+}

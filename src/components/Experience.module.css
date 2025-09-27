@@ -1,0 +1,108 @@
+@keyframes slide-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes slide-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+@keyframes slide-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+.myExperienceSection {
+    max-width: 85%;
+    margin: auto;
+    padding: 5rem 0 0;
+}
+
+.experienceContainer {
+    display: flex;
+    margin: 3rem auto;
+}
+
+.workIcon1,
+.workIcon2 {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+    left: 5.79rem;
+    top: 6rem;
+}
+
+.workIcon2 {
+    top: 25.6rem;
+    left: -6.8rem;
+}
+
+.experienceLine {
+    width: 4px;
+    height: 38.5rem;
+    background-color: gray;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+    left: -0.5rem;
+    top: -2.5rem;
+    animation: slide-from-bottom ease;
+    transition: all 0.2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.experienceOne,
+.experienceTwo {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 1rem 2rem;
+    background-color: #2a2a2a;
+    max-width: 29rem;
+    min-height: 12rem;
+}
+
+.experienceOne {
+    position: relative;
+    left: 3rem;
+    animation: slide-from-left ease;
+    transition: all 0.2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.experienceTwo {
+    position: relative;
+    top: 19rem;
+    right: 4rem;
+    animation: slide-from-right ease;
+    transition: all 0.2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.experienceOne:hover,
+.experienceTwo:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px #2a2a2a, 0 0 30px #2a2a2a;
+}

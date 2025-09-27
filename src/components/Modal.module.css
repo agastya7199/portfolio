@@ -1,0 +1,58 @@
+@keyframes slide-down-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal::backdrop {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    color: lightslategray;
+    min-width: 30rem;
+    max-width: 35rem;
+    background: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    animation: slide-down-fade-in 0.3s ease-out forwards;
+}
+
+.modalContent {
+    color: white;
+}
+
+.closeButton {
+    font-size: 14px;
+    color: white;
+    background: #0d0d0d;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    color: gray;
+}
+
+.progressSection {
+    display: flex;
+    justify-content: space-between;
+    accent-color: #222222;
+}
+
+.succesHeading {
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.successMessage {
+    text-wrap: wrap;
+}

@@ -1,0 +1,14 @@
+.aboutSection {
+    margin: 5rem auto 0;
+    padding: 5rem 0 0;
+}
+
+.aboutMeContainer {
+    max-width: 85%;
+    margin: auto;
+}
+
+.aboutMeContent {
+    font-size: 16px;
+    font-weight: 400;
+}

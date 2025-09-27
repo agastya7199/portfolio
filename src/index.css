@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scrollbar-color: #0d0d0d #3d3d3d;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    color: white;
+    background-color: #0d0d0d;
+    font-family: 'Rubik', sans-serif;
+}
+
+.content {
+    margin: auto;
+    padding: 1rem 0;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.progressBar {
+    margin: 1rem 0;
+}

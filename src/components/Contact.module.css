@@ -1,0 +1,77 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.contactHeadSection {
+    margin: 5rem auto;
+    background: #2f2f2f;
+    padding: 11rem;
+    text-align: center;
+}
+
+.connectMeHead {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.connectMeContent {
+    font-size: 16px;
+}
+
+.contactContainer {
+    margin: 0 auto 7rem;
+    max-width: 85%;
+}
+
+.contactFormHeader {
+    font-size: 20px;
+}
+
+.contactForm {
+    padding: 1rem 1rem 1.5rem;
+    margin: 1rem auto;
+    background-color: #2f2f2f;
+    border-radius: 20px;
+}
+
+.formList {
+    list-style: none;
+    padding: 0;
+}
+
+.formItem {
+    padding: 0rem 1rem 1rem;
+}
+
+.formItem:last-child {
+    padding: 0rem 1rem;
+}
+
+.inputBox,
+.textBox {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+
+.textBox {
+    height: 6rem;
+    font-family: 'Rubik';
+}
+
+.submitButton {
+    font-size: 14px;
+    color: white;
+    background: #0d0d0d;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    color: gray;
+}

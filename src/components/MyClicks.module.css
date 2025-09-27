@@ -1,0 +1,36 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-0.4rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
+.myClicksSection {
+    padding: 5rem 0 0;
+}
+
+.myClicksHeading {
+    max-width: 85%;
+    margin: auto;
+}
+
+.imagesContainer {
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 1rem;
+}
+
+.myClick {
+    width: auto;
+    height: 30rem;
+    border-radius: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
