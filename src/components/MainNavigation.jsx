@@ -76,7 +76,7 @@ export default function MainNavigation() {
                         </li>
                         <li>
                             <Link
-                                to="https://drive.google.com/file/d/1-7P24odYLjLqDRxe7__TNJZa_27g5HQe/view"
+                                to="https://drive.google.com/file/d/1PCL2Snx1Uz2-LVusHHrJ9jQde5vVQvty/view?usp=sharing"
                                 target="_blank"
                             >
                                 <FaFileLines className={classes.resumeIcon} />
